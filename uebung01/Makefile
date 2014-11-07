@@ -8,7 +8,7 @@ main: main.o
 	$(CC) main.o -o main $(LDFLAGS) -lpthread
 
 main.o:
-	§(CC) $(CFLAGS) main.cpp $(LDFLAGS)
+	$(CC) $(CFLAGS) main.cpp $(LDFLAGS)
 
 test:
 	./main
