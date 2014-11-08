@@ -26,6 +26,10 @@ int main( int argc, char* argv[])
 	}
 
 	end = omp_get_wtime();		//?
+	
+	printf("%f\n",start);
+	printf("%f\n",end);
+
 	printf("This task took %fseconds\n",end-start);
 
 	return 0;
