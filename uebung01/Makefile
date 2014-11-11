@@ -1,8 +1,9 @@
 CC=g++-4.9
+CL=g++
 CFLAGS=-c -Wall -std=c++0x
 LDFLAGS=-fopenmp
 
-all: main
+all: main matmult
 
 main: main.o
 	$(CC) main.o -o main $(LDFLAGS) -lpthread
@@ -10,8 +11,15 @@ main: main.o
 main.o:
 	$(CC) $(CFLAGS) main.cpp $(LDFLAGS)
 
+matmult: matmult.o
+	$(CL) matmult.o -o matmult $(LDFLAGS) -lpthread
+
+matmult.o:
+	$(CL) $(CFLAGS) matmult.cpp $(LDFLAGS)
+
 test:
 	./main
+	./matmult
 
 clean:
-	rm -rf *.o main
+	rm -rf *.o main matmult
