@@ -12,7 +12,7 @@ main.o:
 	$(CC) $(CFLAGS) main.cpp $(LDFLAGS)
 
 matmult: matmult.o
-	$(CL) matmult.o -o matmult $(LDFLAGS) -lpthread
+	$(CL) matmult.o -o matmult
 
 matmult.o:
 	$(CL) $(CFLAGS) matmult.cpp $(LDFLAGS)
