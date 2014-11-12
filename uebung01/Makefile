@@ -1,6 +1,6 @@
 CC=g++-4.9
 CL=g++
-CFLAGS=-c -Wall -std=c++0x
+CFLAGS=-c -w -Wall -std=c++0x
 LDFLAGS=-fopenmp
 
 all: main matmult

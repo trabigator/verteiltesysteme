@@ -5,11 +5,10 @@ int main( int argc, char* argv[])
 {
 	int numThreads;		// ?
 	int threadID;		// ?
-	float start,end;	// ?
+	double start,end;	// ?
 
 	start = omp_get_wtime();		//?
-
-/* ? */
+	/* ? */
 
 	#pragma omp parallel num_threads(1)
 	{
