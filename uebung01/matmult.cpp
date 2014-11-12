@@ -12,7 +12,7 @@ float **alloc_mat(int row, int col)
     float **A1, *A2;
 
 	A1 = (float **)calloc(row, sizeof(float *));		// pointer on rows
-	A2 = (float *)calloc(row*col, sizeof(float));    // all matrix elements
+	A2 = (float *)calloc(row*col, sizeof(float));       // all matrix elements
     for (int i = 0; i < row; i++)
         A1[i] = A2 + i*col;
 
